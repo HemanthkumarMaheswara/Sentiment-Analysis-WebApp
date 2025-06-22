@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Web App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="main-bg">
+        <div class="container">
+            <h1>Sentiment Analyzer</h1>
+            <p class="subtitle">Drop a review and get instant sentiment analysis</p>
+            <form id="review-form">
+                <label for="review" class="review-label">Review Text:</label>
+                <textarea id="review" name="review" placeholder="Enter your review here..." required></textarea>
+                <div class="button-row">
+                    <button type="submit" class="analyze-btn">Analyze Sentiment</button>
+                    <button type="button" id="reset-btn" class="reset-btn" style="display:none;">Reset</button>
+                </div>
+            </form>
+            <div id="result-card" class="result-card" style="display:none;">
+                <div class="card-animate" id="card-animate">
+                    <div class="sentiment-row">
+                        <span id="sentiment-emoji" class="sentiment-emoji">😐</span>
+                        <span id="sentiment-label" class="sentiment-label">Neutral</span>
+                    </div>
+                    <div class="confidence-bar-bg">
+                        <div id="confidence-bar" class="confidence-bar"></div>
+                    </div>
+                    <div class="confidence-text">
+                        Confidence: <span id="confidence-value">0%</span>
+                    </div>
+                    <div class="processed-text-box">
+                        <span class="processed-label">Processed Text:</span>
+                        <pre id="processed-text"></pre>
+                    </div>
+                </div>
+                <button type="button" id="reset-btn" class="reset-btn" style="display:none;">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html> 
