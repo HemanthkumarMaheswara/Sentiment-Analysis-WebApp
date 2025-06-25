@@ -66,3 +66,46 @@ This project is a full-stack web application that allows users to analyze the se
 
 ## License
 MIT 
+
+## React App Setup
+1. **Install React App:**
+   ```sh
+   npx create-react-app "Sentiment Analyzer"
+   ```
+2. **Navigate to the React app directory:**
+   ```sh
+   cd "Sentiment Analyzer"
+   ```
+3. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+4. **Run the React app:**
+   ```sh
+   npm start
+   ```
+
+## React App Files
+- `src/` — React components and styles
+- `package.json` — React dependencies
+- `README.md` — React app documentation
+
+## React App Deployment
+1. **Build the React app:**
+   ```sh
+   npm run build
+   ```
+2. **Deploy the React app to a hosting service (e.g., Netlify, Vercel):**
+   - Follow the instructions provided by the hosting service.
+
+## React App Integration
+1. **Integrate the React app with the Flask backend:**
+   - Use the Flask backend to fetch sentiment analysis results for the React app.
+2. **Update the React app to display results from the Flask backend:**
+   - Modify the React app to fetch and display sentiment analysis results from the Flask backend.
+
+## React App Testing
+1. **Test the React app:**
+   - Use the React app to analyze sentiment and verify that it works correctly.
+2. **Test the integration between the React app and the Flask backend:**
+   - Verify that the Flask backend can handle requests from the React app and return accurate sentiment analysis results. 
